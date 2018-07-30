@@ -1,0 +1,161 @@
+.card {
+    width: 100px;
+    height: 150px;
+    position: relative;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.main, .main-menu, .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer{
+    padding-bottom: 10px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul, div {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+ul {
+    align-items: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 99;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu-modules > li {
+    float: left;
+    position: relative;
+    width: 200px;
+    background-color: rgb(89, 122, 201);
+}
+
+ul.menu-modules > li > a {
+    display: block;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(117, 154, 240);
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu-modules > li:hover > ul.submenu {
+    display: block;
+}
+
+.front {
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+/*.card:hover .front {*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+
+/*.card:hover .back {*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+
+.hover-front {
+    transform: rotateY(180deg);
+}
+
+.hover-back {
+    transform: rotateY(360deg);
+}
+
+.hidden-card {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cards-content-back{
+    height: 75px;
+    width: 50px;
+}
+
+/* -------------- dialog ---------------- */
+.user{
+    position: absolute;
+    left: auto;
+    top: auto;
+    height: 130px;
+    width: 300px;
+    background-color: rgb(89, 122, 201);
+    border: rgb(117, 154, 240) solid 1px ;
+}
+
+.user button{
+    position: relative;
+    left: 17%;
+    width: 204px;
+}
+
+.user input{
+    position: relative;
+    left: 17%;
+    width: 200px;
+}
+
+.user strong{
+    position: relative;
+    left: 30%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match-Match-Game</title>
+    <link rel="stylesheet" href="css/index.css">
+<body>
+<wrapper class="main-menu">
+    <ul class="menu-modules">
+        <li class="modal-cards"><a href=#>Shirt-cards</a>
+            <ul class="submenu cards-content">
+                <li><a href=#><img class="cards-content-back" src="img/back1.png"/></a></li>
+                <li><a href=#><img class="cards-content-back" src="img/back2.png"/></a></li>
+                <li><a href=#>img</a></li>
+            </ul>
+        </li>
+        <li class="module-difficult"><a href=#>Game Difficulty</a>
+            <ul class="submenu difficult-content">
+                <li><a href=# id="difficultLow"> Low (2*4) </a></li>
+                <li><a href=# id="difficultMedium"> Medium (3*4)</a></li>
+                <li><a href=# id="difficultHigh"> High (5*5) </a></li>
+            </ul>
+        </li>
+        <li>
+            <p>Your time:</p>
+            <p></p>
+            <div id="timer" class="timer">
+                <div id="hour">00</div>&nbsp;:
+                <div id="minute">00</div>&nbsp;:
+                <div id="second">00</div>
+            </div>
+        </li>
+    </ul>
+</wrapper>
+
+
+<div class="main">
+
+    <div id="table_card" class="table_card">
+    </div>
+    <div class="user">
+        <p><strong>What your name?</strong></p>
+        <p><input id="user-input" maxlength="25" size="40" value=""></p>
+        <p><button id="user-button">Start</button></p>
+    </div>
+</div>
+
+<script src="dist/bundle.js"></script>
+
+</body>
+</html>
